@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #e0f7e9, #c8facc);
+    color: #333;
+    padding: 40px;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: auto;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    color: #228b22;
+  }
+  
+  header h1 span {
+    color: #006400;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    color: #444;
+  }
+  
+  /* Profile Image */
+  .profile {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #0077cc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Sections */
+  section {
+    margin-bottom: 30px;
+  }
+  
+  section h2 {
+    color: #006400;
+    margin-bottom: 10px;
+  }
+  
+  /* Hobbies */
+  .hobbies ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .hobbies li {
+    background-color: #f0fff0;
+    margin-bottom: 5px;
+    padding: 8px;
+    border-left: 4px solid #228b22;
+  }
+  
+  /* Skills Table */
+  .skills table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .skills th, .skills td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .skills th {
+    background-color: #228b22;
+    color: white;
+  }
+  
+  /* Useful Links */
+  .links ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .links li {
+    margin-bottom: 5px;
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: #0077cc;
+  }
+  
+  .links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Interaction Button and Popup */
+  .interaction {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .interaction button {
+    padding: 10px 20px;
+    background-color: #32cd32;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .interaction button:hover {
+    transform: scale(1.05);
+    background-color: #228b22;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    z-index: 10;
+  }
+  
+  .popup p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .popup span {
+    cursor: pointer;
+    background: #ff4d4d;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+  }
+  
+  .popup.show {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
