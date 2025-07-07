@@ -1,0 +1,125 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background: #f4f8fc;
+    color: #333;
+    padding-top: 70px;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #1e40af;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  .navbar .nav-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  .navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .navbar .nav-links li a:hover {
+    text-decoration: underline;
+  }
+  .mobile-toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  
+  /* Header Section */
+  .header {
+    background: linear-gradient(to right, #4f46e5, #06b6d4);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  .header h1 {
+    font-size: 2.5rem;
+  }
+  .header p {
+    margin-top: 15px;
+    font-size: 1.2rem;
+  }
+  
+  /* Main Sections */
+  .section {
+    background-color: white;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 900px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  .section h2 {
+    margin-bottom: 20px;
+    color: #1e40af;
+  }
+  
+  /* Quiz and Joke Styling */
+  #quiz-container div {
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    margin: 5px 0;
+  }
+  button {
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  button:hover {
+    background-color: #1e3a8a;
+  }
+  #quiz-result, #jokeDisplay {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #0f172a;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .navbar .nav-links {
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #1e40af;
+      width: 100%;
+      display: none;
+      padding: 15px 0;
+    }
+    .navbar .nav-links.show {
+      display: flex;
+    }
+    .mobile-toggle {
+      display: block;
+    }
+  }
+  
