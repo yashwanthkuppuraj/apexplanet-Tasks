@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Artisan Alley</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Artisan Alley</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#testimonials">Testimonials</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="cart-icon">
+                <a href="cart.html">
+                    <span>🛒</span>
+                    <span id="cart-count">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products-page">
+            <h2>Our Products</h2>
+            <div class="filters">
+                <select id="category-filter">
+                    <option value="all">All Categories</option>
+                    <option value="woodwork">Woodwork</option>
+                    <option value="textiles">Textiles</option>
+                    <option value="pottery">Pottery</option>
+                    <option value="candles">Candles</option>
+                    <option value="jewelry">Jewelry</option>
+                </select>
+                <select id="sort-by">
+                    <option value="newest">Newest Arrivals</option>
+                    <option value="price-lh">Price: Low to High</option>
+                    <option value="price-hl">Price: High to Low</option>
+                    <option value="top-rated">Top Rated</option>
+                </select>
+            </div>
+            <div class="product-grid">
+                </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Artisan Alley</h3>
+                <p>Your one-stop shop for authentic handcrafted goods.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="index.html#testimonials">Testimonials</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Information</h3>
+                <p>Email: info@artisan-alley.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: 123 Craft Lane, Makersville</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#">f</a>
+                    <a href="#">i</a>
+                    <a href="#">t</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2023 Artisan Alley. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
