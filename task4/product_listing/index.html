@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>Product Catalog</h1>
+            <a href="../index.html" class="back-link">Back to Portfolio</a>
+        </header>
+        <div class="product-listing-app">
+            <aside class="filters-sidebar">
+                <h2>Filters</h2>
+                <div class="filter-group">
+                    <h3>Category</h3>
+                    <div class="category-filters">
+                        <button class="category-btn active" data-category="all">All</button>
+                        <button class="category-btn" data-category="electronics">Electronics</button>
+                        <button class="category-btn" data-category="clothing">Clothing</button>
+                        <button class="category-btn" data-category="home">Home</button>
+                        <button class="category-btn" data-category="books">Books</button>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <h3>Price Range</h3>
+                    <div class="price-filter">
+                        <input type="range" id="price-range" min="0" max="1000" value="1000">
+                        <div class="price-display">
+                            <span>$0</span> - <span id="price-value">$1000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <h3>Sort By</h3>
+                    <select id="sort-by" class="sort-select">
+                        <option value="default">Default</option>
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option>
+                        <option value="rating-desc">Rating: High to Low</option>
+                        <option value="rating-asc">Rating: Low to High</option>
+                        <option value="name-asc">Name: A to Z</option>
+                        <option value="name-desc">Name: Z to A</option>
+                    </select>
+                </div>
+            </aside>
+            <main class="product-grid-container">
+                <div id="product-grid" class="product-grid"></div>
+            </main>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
